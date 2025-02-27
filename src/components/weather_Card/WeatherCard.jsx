@@ -5,12 +5,15 @@ import CloseOutlinedIcon from "@mui/icons-material/CloseOutlined";
 import NearMeOutlinedIcon from "@mui/icons-material/NearMeOutlined";
 
 const WeatherCard = ({ removeId, onRemove, backgroundColor, weatherData ,onClick}) => {
+
   return (
+
     <div
       className="weather-card"
       style={{ backgroundColor }}
-      
-    > <div className="close-button">
+    >
+      {/* Card Remove Button */}
+      <div className="close-button">
       <IconButton
           sx={{ color: "white", width: "10px", height: "10px" , zIndex:1}}
           onClick={() => onRemove(removeId)}
@@ -18,7 +21,8 @@ const WeatherCard = ({ removeId, onRemove, backgroundColor, weatherData ,onClick
           <CloseOutlinedIcon />
       </IconButton>
     </div>
-      <div onClick={onClick}>
+      <div onClick={onClick}>    {/* On Click Function call */}
+      {/* Weather Card Header */}
       <div className="weather-header">
         <div className="left-header">
           <h2 className="city-name">{weatherData?.name || "Loading..."} <span>,</span>{weatherData?.sys.country || "Loading"}</h2> 
@@ -51,7 +55,7 @@ const WeatherCard = ({ removeId, onRemove, backgroundColor, weatherData ,onClick
         </div>
 
       </div>
-
+    {/* Weather Card Body */}
       <div className="weather-body">
         <div className="status1">
           <p>Pressure: {weatherData?.main?.pressure || "Loading..."} hPa</p>

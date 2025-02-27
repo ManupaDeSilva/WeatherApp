@@ -7,9 +7,11 @@ import IconButton from "@mui/material/IconButton";
 const LargeWeatherCard = ({ weatherData, onBack }) => {
     return (
       <div className='large-card-wrapper'>
+        {/* Weather Card Header */}
         <div className='card-header'>
           <div className='arrow-back'>
-            <IconButton sx={{ color: "white" }} onClick={onBack}> {/* Back button */}
+            {/* Back button */}
+            <IconButton sx={{ color: "white" }} onClick={onBack}> 
               <ArrowBackIcon />
             </IconButton>
           </div>
@@ -31,7 +33,7 @@ const LargeWeatherCard = ({ weatherData, onBack }) => {
             </div>
           </div>
         </div>
-  
+  {/* Weather Card Body */}
         <div className='card-body'>
           <div className="status1">
             <p>Pressure: {weatherData?.main?.pressure} hPa</p>
