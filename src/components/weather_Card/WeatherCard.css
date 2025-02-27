@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+.weather-card {
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 480px;
+    transition: transform 0.3s ease-in-out;
+  
+  }
+  
+.weather-card:hover {
+    transform: scale(1.02);
+  }
+  
+.weather-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+    border-radius: 5px 5px 0px 0px;
+    height: 160px;
+    background-image: url('../../assets/cloud-bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+  
+.left-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.right-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.city-name {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+.header-time{
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+.sky-status{
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+  }
+
+.temp{
+    font-size: 42px;
+    font-weight: bold;
+  }
+
+.min-max-temp{
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+.weather-body {
+    border-radius: 0px 0px 5px 5px;
+    height: 120px;
+    background-color: #383B47;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+  }
+  
+.separator {
+    opacity: 0.2;
+    height: 60px;
+  }
+.status2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+.status1 p,
+.status2 p,
+.status3 p
+  {
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+.close-button{
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  padding: 10px 10px 0px 0px;
+  margin-bottom: -5px;
+}
+  
+@media (max-width: 600px) {
+    .weather-card {
+      width: 332px;
+    }
+  
+    .weather-header{
+     gap: 28px;
+     
+    }
+
+    .city-name {
+      font-size: 18px;
+    }
+  
+    .sky-type{
+        font-size: 12px;
+    }
+  
+    .status1 p,
+    .status2 p,
+    .status3 p
+    {
+      font-size: 10px;
+      font-weight: bold;
+    }
+ 
+}
+  
