@@ -16,7 +16,7 @@ const LargeWeatherCard = ({ weatherData, onBack }) => {
             </IconButton>
           </div>
           <h2 className="city-name1">{weatherData?.name}, {weatherData?.sys?.country}</h2>
-          <p className="header-time">{new Date(weatherData?.dt * 1000).toLocaleString()}</p>
+          <p className="header-time">{new Date().toLocaleTimeString()}, {new Date().toLocaleDateString()}</p>
   
           <div className='header-body'>
             <div className="left-header2">
