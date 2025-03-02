@@ -84,11 +84,6 @@ const Home = () => {
   }
   };
 
-  //handle input change
-  const handleInputChange = (event) => {
-    setCityInput(event.target.value);
-  };
-
   //handle add city
   const handleAddCity = () => {
     const cityName = cityInput.trim().toLowerCase();
@@ -202,7 +197,7 @@ const Home = () => {
                 }}
                 placeholder="Enter City Name"
                 value={cityInput}
-                onChange={handleInputChange}
+                onChange={(e) => setCityInput(e.target.value)}
               />
               <button style={{
                   padding: "14px 20px",
