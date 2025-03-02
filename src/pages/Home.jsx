@@ -186,7 +186,7 @@ const Home = () => {
         </Alert>
       </Snackbar>
 
-      <Container sx={{ display: "flex",  flexDirection: "column", alignItems: "center", flex:1 }}>
+      <div style={{ display: "flex", flexGrow: 1, overflow: "auto" , flexDirection: "column", alignItems: "center", flex:1 }}>
         <Box sx={{ display: "flex", gap: 1, alignItems: "center", py: 5 }}>
           <img src={logo} alt="header" style={{ width: "46px", height: "36px" }} />
           <Typography variant="h5">Weather App</Typography>
@@ -241,7 +241,7 @@ const Home = () => {
           weatherData={selectedCity}  
           onBack={() => setSelectedCity(null)}
           />}
-      </Container>
+      </div>
       <Footer />
     </div>
   );
