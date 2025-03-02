@@ -14,16 +14,6 @@
     
 }
 
-.large-card-container {
-    width: 60%;
-    height: '300px';
-    border-radius: 12px;
-    background-color: aqua;
-    display: flex;
-    justify-content: center;
-        
-}
-
 .card-header{
     display: flex;
     flex-direction: column;
